@@ -34,3 +34,10 @@
   height: 8px;
   border-radius: 20px;
 }
+
+.nav__ecl2 {
+  background-color: tomato;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
