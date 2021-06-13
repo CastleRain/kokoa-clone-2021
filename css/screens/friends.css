@@ -27,6 +27,17 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
@@ -38,4 +49,7 @@
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  /* forward가 마지막 애니메이션을 저장해주는 것, 없으면 다시 돌아간다. */
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 1s;
 }
